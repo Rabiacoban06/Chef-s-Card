@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Şefin Kartı - Yemek ve Tatlı Tarifleri</title>
+</head>
+<body>
+
+    <!-- Kontrol Paneli -->
+    <input type="radio" name="slider" id="t1" checked>
+    <input type="radio" name="slider" id="t2">
+    <input type="radio" name="slider" id="t3">
+    <input type="radio" name="slider" id="t4">
+    <input type="radio" name="slider" id="t5">
+    <input type="radio" name="slider" id="t6">
+    <input type="radio" name="slider" id="t7">
+    <input type="radio" name="slider" id="t8">
+    <input type="radio" name="slider" id="t9">
+    <input type="radio" name="slider" id="t10">
+    <input type="radio" name="slider" id="t11">
+    <input type="radio" name="slider" id="t12">
+    <input type="radio" name="slider" id="t13">
+    <input type="radio" name="slider" id="t14">
+    <input type="radio" name="slider" id="t15">
+
+    <div class="main-container">
+        
+        <!-- SOL OKLAR -->
+        <label for="t15" class="arrow left a1">❮</label><label for="t1" class="arrow left a2">❮</label>
+        <label for="t2" class="arrow left a3">❮</label><label for="t3" class="arrow left a4">❮</label>
+        <label for="t4" class="arrow left a5">❮</label><label for="t5" class="arrow left a6">❮</label>
+        <label for="t6" class="arrow left a7">❮</label><label for="t7" class="arrow left a8">❮</label>
+        <label for="t8" class="arrow left a9">❮</label><label for="t9" class="arrow left a10">❮</label>
+        <label for="t10" class="arrow left a11">❮</label><label for="t11" class="arrow left a12">❮</label>
+        <label for="t12" class="arrow left a13">❮</label><label for="t13" class="arrow left a14">❮</label>
+        <label for="t14" class="arrow left a15">❮</label>
+
+        <div class="card-wrapper">
+            
+            <!-- TARİF 1: MERCİMEK ÇORBASI -->
+            <article class="recipe-card c1">
+                <h2 class="title">- Mercimek Çorbası -</h2>
+                <img src="./fotoğraflar/mercimekçorbası.avif" class="photo">
+                <div class="info">
+                    <span>🕒 30 Dak | 🔥 140 kcal | 👨‍🍳 Kolay</span>
+                    <div class="ingredients">
+                        <strong>Malzemeler:</strong>
+                        <div><input type="checkbox" id="c1-1"><label for="c1-1">1 bardak mercimek, 1 soğan</label></div>
+                        <div><input type="checkbox" id="c1-2"><label for="c1-2">Havuç, Et suyu, Salça</label></div>
+                    </div>
+                </div>
+                <input type="checkbox" id="step1" class="toggle-steps"><label for="step1" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Soğan ve havucu kavur, mercimeği ekle. Suyla pişirip blenderdan geçir.</p></div>
+            </article>
+
+            <!-- TARİF 2: İÇLİ KÖFTE -->
+            <article class="recipe-card c2">
+                <h2 class="title">- İçli Köfte -</h2>
+                <img src="./fotoğraflar/içliköfte.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 90 Dak | 🔥 350 kcal | 👨‍🍳 Zor</span>
+                    <div class="ingredients">
+                        <strong>Malzemeler:</strong>
+                        <div><input type="checkbox" id="c2-1"><label for="c2-1">Bulgur, İrmik, Dana Kıyma</label></div>
+                        <div><input type="checkbox" id="c2-2"><label for="c2-2">Ceviz, Baharatlar</label></div>
+                    </div>
+                </div>
+                <input type="checkbox" id="step2" class="toggle-steps"><label for="step2" class="btn">Adımları Gör</label>
+                <div class="steps"><p>İç harcı kavurup soğut. Dış harcı yoğurup şekil ver ve içini doldur. Haşla veya kızart.</p></div>
+            </article>
+
+            <!-- TARİF 3: TAVUKLU PİLAV -->
+            <article class="recipe-card c3">
+                <h2 class="title">- Tavuklu Pilav -</h2>
+                <img src="./fotoğraflar/tavukpilav.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 45 Dak | 🔥 320 kcal | 👨‍🍳 Orta</span>
+                    <div class="ingredients">
+                        <strong>Malzemeler:</strong>
+                        <div><input type="checkbox" id="c3-1"><label for="c3-1">Pirinç, Tavuk Göğsü</label></div>
+                        <div><input type="checkbox" id="c3-2"><label for="c3-2">Tereyağı, Karabiber</label></div>
+                    </div>
+                </div>
+                <input type="checkbox" id="step3" class="toggle-steps"><label for="step3" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Tavuğu haşlayıp didikleyin. Pirinci kavurup tavuk suyuyla pişirin ve üzerine tavukları ekleyin.</p></div>
+            </article>
+
+            <!-- TARİF 4: KISIR -->
+            <article class="recipe-card c4">
+                <h2 class="title">- Kısır -</h2>
+                <img src="./fotoğraflar/kısır.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 20 Dak | 🔥 210 kcal | 👨‍🍳 Kolay</span>
+                    <div class="ingredients">
+                        <strong>Malzemeler:</strong>
+                        <div><input type="checkbox" id="c4-1"><label for="c4-1">Bulgur, Salça, Nar Ekşisi</label></div>
+                        <div><input type="checkbox" id="c4-2"><label for="c4-2">Taze Soğan, Maydanoz</label></div>
+                    </div>
+                </div>
+                <input type="checkbox" id="step4" class="toggle-steps"><label for="step4" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Bulguru ıslatıp şişirin. Salça ve ekşilerle yoğurup yeşillikleri ekleyin.</p></div>
+            </article>
+
+            <!-- TARİF 5: PATATES SALATASI -->
+            <article class="recipe-card c5">
+                <h2 class="title">- Patates Salatası -</h2>
+                <img src="./fotoğraflar/patatessalatası.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 30 Dak | 🔥 180 kcal | 👨‍🍳 Kolay</span>
+                    <div class="ingredients">
+                        <strong>Malzemeler:</strong>
+                        <div><input type="checkbox" id="c5-1"><label for="c5-1">Haşlanmış Patates</label></div>
+                        <div><input type="checkbox" id="c5-2"><label for="c5-2">Kuru Soğan, Zeytinyağı, Sumak</label></div>
+                    </div>
+                </div>
+                <input type="checkbox" id="step5" class="toggle-steps"><label for="step5" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Patatesleri küp doğrayın. Soğan ve yeşilliklerle karıştırıp sosunu dökün.</p></div>
+            </article>
+
+            <!-- TARİF 6: FASULYE YEMEĞİ -->
+            <article class="recipe-card c6">
+                <h2 class="title">- Zeytinyağlı Taze Fasulye -</h2>
+                <img src="./fotoğraflar/fasulye.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 40 Dak | 🔥 120 kcal | 👨‍🍳 Orta</span>
+                    <div class="ingredients">
+                        <strong>Malzemeler:</strong>
+                        <div><input type="checkbox" id="c6-1"><label for="c6-1">Fasulye, Domates, Soğan</label></div>
+                        <div><input type="checkbox" id="c6-2"><label for="c6-2">Zeytinyağı, 1 Kesme Şeker</label></div>
+                    </div>
+                </div>
+                <input type="checkbox" id="step6" class="toggle-steps"><label for="step6" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Fasulyeleri temizleyip doğrayın. Domates ve soğanla birlikte kısık ateşte pişirin.</p></div>
+            </article>
+
+            <!-- TARİF 7: KARNIYARIK -->
+            <article class="recipe-card c7">
+                <h2 class="title">- Karnıyarık -</h2>
+                <img src="./fotoğraflar/karnıyarık.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 50 Dak | 🔥 280 kcal | 👨‍🍳 Orta</span>
+                    <div class="ingredients">
+                        <strong>Malzemeler:</strong>
+                        <div><input type="checkbox" id="c7-1"><label for="c7-1">Patlıcan, Kıyma, Biber</label></div>
+                        <div><input type="checkbox" id="c7-2"><label for="c7-2">Domates, Soğan, Salça</label></div>
+                    </div>
+                </div>
+                <input type="checkbox" id="step7" class="toggle-steps"><label for="step7" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Patlıcanları kızartıp ortasını açın. Kıymalı harçla doldurup fırında pişirin.</p></div>
+            </article>
+
+            <!-- TARİF 8: YAPRAK SARMASI -->
+            <article class="recipe-card c8">
+                <h2 class="title">- Yaprak Sarması -</h2>
+                <img src="./fotoğraflar/yaprak sarma.webp" class="photo">
+                <div class="info">
+                    <span>🕒 80 Dak | 🔥 250 kcal | 👨‍🍳 Zor</span>
+                    <div class="ingredients">
+                        <strong>Malzemeler:</strong>
+                        <div><input type="checkbox" id="c8-1"><label for="c8-1">Asma Yaprağı, Pirinç</label></div>
+                        <div><input type="checkbox" id="c8-2"><label for="c8-2">Zeytinyağı, Kuş Üzümü</label></div>
+                    </div>
+                </div>
+                <input type="checkbox" id="step8" class="toggle-steps"><label for="step8" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Harcı hazırlayıp yapraklara sarın. Tencereye dizip zeytinyağlı suyla pişirin.</p></div>
+            </article>
+
+            <!-- TARİF 9: FIRINDA PATATES TAVUK -->
+            <article class="recipe-card c9">
+                <h2 class="title">- Fırında Patates Tavuk -</h2>
+                <img src="./fotoğraflar/fırındapt.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 60 Dak | 🔥 410 kcal | 👨‍🍳 Kolay</span>
+                    <div class="ingredients">
+                        <strong>Malzemeler:</strong>
+                        <div><input type="checkbox" id="c9-1"><label for="c9-1">Tavuk Baget, Patates</label></div>
+                        <div><input type="checkbox" id="c9-2"><label for="c9-2">Yoğurt, Salça, Kekik</label></div>
+                    </div>
+                </div>
+                <input type="checkbox" id="step9" class="toggle-steps"><label for="step9" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Tavuk ve patatesleri soslayıp tepsiye dizin. 200 derece fırında kızarana kadar pişirin.</p></div>
+            </article>
+
+
+            <!-- TATLILAR -->
+            
+            <!-- TATLI 11: SUFLE -->
+            <article class="recipe-card c11">
+                <h2 class="title">- Akışkan Sufle -</h2>
+                <img src="./fotoğraflar/sufle.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 15 Dak | 🔥 340 kcal</span>
+                    <div class="ingredients"><strong>Malzemeler:</strong> Bitter Çikolata, Yumurta, Un</div>
+                </div>
+                <input type="checkbox" id="step11" class="toggle-steps"><label for="step11" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Çikolatayı erit, yumurtayla çırp. Kaplara döküp fırında 8-10 dakika pişir.</p></div>
+            </article>
+
+            <!-- TATLI 12: BROWNIE -->
+            <article class="recipe-card c12">
+                <h2 class="title">- Islak Brownie -</h2>
+                <img src="./fotoğraflar/browni.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 35 Dak | 🔥 380 kcal</span>
+                    <div class="ingredients"><strong>Malzemeler:</strong> Kakao, Ceviz, Süt, Sıvı Yağ</div>
+                </div>
+                <input type="checkbox" id="step12" class="toggle-steps"><label for="step12" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Tüm malzemeleri çırpın. Fırından çıkınca hazırladığınız sosu üzerine dökün.</p></div>
+            </article>
+
+            <!-- TATLI 13: AĞLAYAN KEK -->
+            <article class="recipe-card c13">
+                <h2 class="title">- Ağlayan Kek -</h2>
+                <img src="./fotoğraflar/aglayan-pasta.jpg" class="photo">
+                <div class="info">
+                    <span>🕒 40 Dak | 🔥 310 kcal</span>
+                    <div class="ingredients"><strong>Malzemeler:</strong> Kek, Krem Şanti, Çikolata Sosu</div>
+                </div>
+                <input type="checkbox" id="step13" class="toggle-steps"><label for="step13" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Keki sütle ıslat. Üzerine krem şanti ve ardından çikolata sosu dökün.</p></div>
+            </article>
+
+            <!-- TATLI 14: TIRAMISU -->
+            <article class="recipe-card c14">
+                <h2 class="title">- Tiramisu -</h2>
+                <img src="./fotoğraflar/tiramısu.webp" class="photo">
+                <div class="info">
+                    <span>🕒 30 Dak | 🔥 290 kcal</span>
+                    <div class="ingredients"><strong>Malzemeler:</strong> Labne, Kedi Dili, Kahve, Kakao</div>
+                </div>
+                <input type="checkbox" id="step14" class="toggle-steps"><label for="step14" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Kedi dillerini kahveyle ıslat. Labneli kremayla katlar oluşturup üzerine kakao eleyin.</p></div>
+            </article>
+
+            <!-- TATLI 15: CHEESECAKE -->
+            <article class="recipe-card c15">
+                <h2 class="title">- San Sebastian Cheesecake -</h2>
+                <img src="./fotoğraflar/çiskek.avif" class="photo">
+                <div class="info">
+                    <span>🕒 50 Dak | 🔥 420 kcal</span>
+                    <div class="ingredients"><strong>Malzemeler:</strong> Krem Peynir, Krema, Şeker, Yumurta</div>
+                </div>
+                <input type="checkbox" id="step15" class="toggle-steps"><label for="step15" class="btn">Adımları Gör</label>
+                <div class="steps"><p>Peynirli harcı pürüzsüz olana kadar çırpın. 240 derecede üzeri yanana kadar pişirin.</p></div>
+            </article>
+
+        </div>
+
+        <!-- SAĞ OKLAR -->
+        <label for="t2" class="arrow right a1">❯</label><label for="t3" class="arrow right a2">❯</label>
+        <label for="t4" class="arrow right a3">❯</label><label for="t5" class="arrow right a4">❯</label>
+        <label for="t6" class="arrow right a5">❯</label><label for="t7" class="arrow right a6">❯</label>
+        <label for="t8" class="arrow right a7">❯</label><label for="t9" class="arrow right a8">❯</label>
+        <label for="t10" class="arrow right a9">❯</label><label for="t11" class="arrow right a10">❯</label>
+        <label for="t12" class="arrow right a11">❯</label><label for="t13" class="arrow right a12">❯</label>
+        <label for="t14" class="arrow right a13">❯</label><label for="t15" class="arrow right a14">❯</label>
+        <label for="t1" class="arrow right a15">❯</label>
+
+    </div>
+
+</body>
+</html>

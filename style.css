@@ -1,0 +1,113 @@
+/* 1. TEMEL AYARLAR */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #afc9af;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Taşmaları engeller */
+}
+
+input[name="slider"] { display: none; }
+
+/* 2. ANA TAŞIYICI (EKRANI TAM KAPLAR) */
+.main-container {
+    position: relative;
+    width: 100vw; /* Ekran genişliğinin tamamı */
+    height: 100vh; /* Ekran yüksekliğinin tamamı */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    width: 90%;
+    max-width: 420px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. KART TASARIMI */
+.recipe-card {
+    position: absolute;
+    width: 100%;
+    background: #ebebe3;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+/* 4. OKLAR (EKRANIN KENARLARINA SABİT) */
+.arrow {
+    position: fixed; /* Karttan bağımsız, ekrana göre konumlanır */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: #f39c12;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    user-select: none;
+    padding: 20px; /* Tıklama alanını genişletir */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.left { left: 10px; } /* Sol kenardan 10px içeride */
+.right { right: 10px; } /* Sağ kenardan 10px içeride */
+
+.arrow:hover {
+    color: #e67e22;
+    transform: translateY(-50%) scale(1.2);
+}
+
+/* 5. GÖRÜNÜRLÜK MANTIĞI */
+#t1:checked ~ .main-container .c1, #t2:checked ~ .main-container .c2, #t3:checked ~ .main-container .c3,
+#t4:checked ~ .main-container .c4, #t5:checked ~ .main-container .c5, #t6:checked ~ .main-container .c6,
+#t7:checked ~ .main-container .c7, #t8:checked ~ .main-container .c8, #t9:checked ~ .main-container .c9,
+#t10:checked ~ .main-container .c10, #t11:checked ~ .main-container .c11, #t12:checked ~ .main-container .c12,
+#t13:checked ~ .main-container .c13, #t14:checked ~ .main-container .c14, #t15:checked ~ .main-container .c15 {
+    opacity: 1; transform: scale(1); pointer-events: auto;
+}
+
+#t1:checked ~ .main-container .a1, #t2:checked ~ .main-container .a2, #t3:checked ~ .main-container .a3,
+#t4:checked ~ .main-container .a4, #t5:checked ~ .main-container .a5, #t6:checked ~ .main-container .a6,
+#t7:checked ~ .main-container .a7, #t8:checked ~ .main-container .a8, #t9:checked ~ .main-container .a9,
+#t10:checked ~ .main-container .a10, #t11:checked ~ .main-container .a11, #t12:checked ~ .main-container .a12,
+#t13:checked ~ .main-container .a13, #t14:checked ~ .main-container .a14, #t15:checked ~ .main-container .a15 { 
+    display: block; 
+}
+
+/* 6. İÇERİK ÖĞELERİ */
+.photo { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.title { font-style: italic; color: #333; margin: 0; }
+.info { width: 100%; font-size: 14px; text-align: left; }
+.btn { background: #b5eeb5; padding: 12px 25px; border-radius: 20px; cursor: pointer; font-weight: bold; margin-top: auto; border: 1px solid #9edb9e; }
+
+/* 7. TARİF PENCERESİ */
+.toggle-steps { display: none; }
+.steps { max-height: 0; overflow: hidden; transition: 0.4s ease; background: white; border-radius: 15px; width: 100%; }
+.toggle-steps:checked ~ .steps { max-height: 200px; padding: 15px; margin-top: 10px; border: 1px solid #ddd; overflow-y: auto; }
+
+/* 8. MOBİL AYARLAR */
+@media screen and (max-width: 500px) {
+    .card-wrapper { width: 85%; }
+    .photo { width: 140px; height: 140px; }
+    .arrow { font-size: 40px; padding: 10px; }
+    .left { left: 5px; }
+    .right { right: 5px; }
+}
